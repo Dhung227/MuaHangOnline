@@ -5,6 +5,7 @@ import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import { initializeApp } from "firebase/app";
 import { getAuth, signOut, onAuthStateChanged } from "firebase/auth";
 
+
 const firebaseConfig = {
     apiKey: "AIzaSyDCYGX042P9tKjlXhoL_aV5bEHKpcSwRyg",
     authDomain: "thuctaponline-2af56.firebaseapp.com",
@@ -22,6 +23,13 @@ const AccountScreen = ({ navigation }) => {
     const app = initializeApp(firebaseConfig);
     const auth = getAuth(app);
     const user = auth.currentUser;
+
+    // useEffect(() => {
+    //     if (user) {
+    //       setEmail(user.email);
+    //       console.log(user.uid);
+    //     }
+    //   }, [user]);
 
     useEffect(() => {
         if (user) {
