@@ -7,7 +7,7 @@ const HomeScreen = ({ navigation }) => {
             <StatusBar
                 barStyle={'dark-content'}
             />
-            <Text>TRANG CHỦ</Text>
+            <Text>ĐANG CODE TẠI NHÁNH HƯNG</Text>
         </View>
     );
 };
